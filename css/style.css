@@ -6,27 +6,40 @@ body {
   font-family: sans-serif;
 }
 h1 {
+  color: #392023;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Aboreto", cursive;
+  font-weight: bolder;
   font-size: 36px;
 }
+.clock {
+  margin: 0 4px;
+  color: #51483f;
+  font-size: 32px;
+  animation-duration: 7.5s;
+}
+
 h2 {
   margin: 0 0 5px;
-  font-size: 28px;
+  font-size: 32px;
 }
 select {
   display: block;
+  background-color: rgba(255, 255, 255, 0.521);
+  font-family: "Playfair Display", serif;
   width: 100%;
   font-size: 18px;
   border-radius: 4px;
+  text-align: center;
   padding: 10px;
 }
 .container {
+  font-family: "Playfair Display", serif;
   border: 1px solid black;
   max-width: 550px;
   margin: 60px auto;
   background-color: rgba(255, 236, 167, 0.672);
-  padding: 30px;
+  padding: 20px 60px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -34,10 +47,11 @@ select {
 }
 
 .city {
+  color: #352e28;
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 25px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 .city:last-child {
@@ -45,9 +59,10 @@ select {
 }
 
 .date {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .time {
+  color: #5d503f;
   font-size: 48px;
   font-weight: bold;
 }
@@ -58,6 +73,7 @@ select {
 }
 
 footer {
+  color: #392023;
   background-color: rgba(255, 255, 255, 0.764);
   text-align: center;
   font-size: 18px;
@@ -65,4 +81,19 @@ footer {
   margin: 60px auto;
   max-width: 600px;
   border-radius: 10px;
+}
+a {
+  color: #574f42;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.homepage {
+  color: #faf4ea;
+  padding: 8px 20px 8px 20px;
+  border-radius: 20px;
+  background-color: rgba(112, 98, 81, 0.7);
+  font-size: 16px;
+  text-align: center;
 }
