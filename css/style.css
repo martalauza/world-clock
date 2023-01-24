@@ -89,11 +89,49 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.homepage {
+.back {
   color: #faf4ea;
   padding: 8px 20px 8px 20px;
   border-radius: 20px;
   background-color: rgba(112, 98, 81, 0.7);
   font-size: 16px;
   text-align: center;
+}
+@media (max-width: 600px) {
+  body {
+    background-position: center;
+  }
+  .container {
+    margin: 70px 12px 10px 12px;
+    padding: 5px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  select {
+    padding: 5px 10px;
+    font-size: 17px;
+  }
+  .city {
+    font-size: 15px;
+    padding: 20px 35px;
+  }
+  .date {
+    display: none;
+  }
+  .time {
+    font-size: 30px;
+  }
+  .back {
+    padding: 2px 14px;
+    font-size: 14px;
+  }
+  .flag {
+    display: none;
+  }
+  footer {
+    font-size: 13px;
+    margin: 35px 12px;
+  }
 }

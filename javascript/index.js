@@ -52,7 +52,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
     </div>⬅ 
-   <a href = "/" class="homepage">Back</a>
+   <a href = "/" class="back">Back</a>
   `;
 }
 
