@@ -1,4 +1,14 @@
 function updateTime() {
+  //Riga
+  let rigaElement = document.querySelector("#riga");
+  if (rigaElement) {
+    let rigaDateElement = rigaElement.querySelector(".date");
+    let rigaTimeElement = rigaElement.querySelector(".time");
+    let rigaTime = moment().tz("Europe/Riga");
+
+    rigaDateElement.innerHTML = rigaTime.format("MMMM Do YYYY");
+    rigaTimeElement.innerHTML = rigaTime.format("h:mm:ss[<small>]A[</small>]");
+  }
   //Los Angeles
   let losAngelesElement = document.querySelector("#los-angeles");
   if (losAngelesElement) {
@@ -11,15 +21,15 @@ function updateTime() {
       "h:mm:ss[<small>]A[</small>]"
     );
   }
-  //Reykjavik
-  let reykjavikElement = document.querySelector("#reykjavik");
-  if (reykjavikElement) {
-    let reykjavikDateElement = reykjavikElement.querySelector(".date");
-    let reykjavikTimeElement = reykjavikElement.querySelector(".time");
-    let reykjavikTime = moment().tz("Atlantic/Reykjavik");
+  //Sydney
+  let sydneyElement = document.querySelector("#sydney");
+  if (sydneyElement) {
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
+    let sydneyTime = moment().tz("Australia/Sydney");
 
-    reykjavikDateElement.innerHTML = reykjavikTime.format("MMMM Do YYYY");
-    reykjavikTimeElement.innerHTML = reykjavikTime.format(
+    sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
+    sydneyTimeElement.innerHTML = sydneyTime.format(
       "h:mm:ss[<small>]A[</small>]"
     );
   }
